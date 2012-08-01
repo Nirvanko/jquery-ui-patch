@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Patched UI datepicker demo</title>
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-i18n.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.22.custom.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script>
+$(document).ready(function() {
+	$.datepicker.setDefaults($.datepicker.regional['en-GB']);
+	$('#datepicker').datepicker({
+		showButtonPanel:true,
+		numberOfMonths:3,
+		daysRange: true // enable days range selection.
+	});
+});
+		</script>		
+		<style type="text/css">
+.ui-datepicker {
+    font-size:72.5%;
+}
+		</style>	
+	</head>
+	<body>
+		<input type="text" id="datepicker">
+	</body>
+</html>
